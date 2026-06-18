@@ -1,14 +1,14 @@
 class TiffanyLoop < Formula
   desc "Lightweight multi-agent orchestration shell for Claude Code, Codex CLI, and LLM agents"
   homepage "https://github.com/macguffinQ/Tiffany"
-  version "0.1.8"
+  version "0.1.9"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.8/tiffany-loop-v0.1.8-aarch64-apple-darwin.tar.gz"
-    sha256 "067bd44dddd81fabac27d68d6a0d7eab2d7a35cc824a87e120043c6d3d690a06"
+    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.9/tiffany-loop-v0.1.9-aarch64-apple-darwin.tar.gz"
+    sha256 "418c6899fd7307573090fe626583b6bf5eb162aff7ba5404836a111dfea967d4"
   else
-    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.8.tar.gz"
-    sha256 "9e0b646dce37fe6fab744a6694c8e6f997f4d178b4701454872e11882d687628"
+    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.9.tar.gz"
+    sha256 "9b38837032923530f8c4c24d224250c6c3090c4b5144f001a75858eb2e5eb839"
     depends_on "rust" => :build
   end
 
