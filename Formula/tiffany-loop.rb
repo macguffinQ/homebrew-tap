@@ -3,11 +3,11 @@ class TiffanyLoop < Formula
   homepage "https://github.com/macguffinQ/Tiffany"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.14/tiffany-loop-v0.1.14-aarch64-apple-darwin.tar.gz"
-    sha256 "480253ae9c75971af7ba9eea6ca253bee1eeb63e3d4c4294a753ef155d127f00"
+    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.15/tiffany-loop-v0.1.15-aarch64-apple-darwin.tar.gz"
+    sha256 "2b3f90f6b17d085ab3a0f915fc2636781df9512b1228d7c55ffe1eddad7df96e"
   else
-    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.14.tar.gz"
-    sha256 "4938055d1b4db02004ea8c2cc487a62ac40f5fc2a1e093097adbaf560713ad06"
+    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.15.tar.gz"
+    sha256 "c71733240af6b1ee656dbb8b770b61acff10b18ea92b1a757e3e019e2f89b3f4"
     depends_on "rust" => :build
   end
 
@@ -25,5 +25,6 @@ class TiffanyLoop < Formula
   test do
     assert_match "orchestrator", shell_output("#{bin}/orchestrator --help")
     assert_match "orchestrator", shell_output("#{bin}/tiffany-loop orchestrator --help 2>/dev/null")
+    assert_match "orchestrator status", shell_output("#{bin}/tiffany-loop status --help 2>/dev/null")
   end
 end
