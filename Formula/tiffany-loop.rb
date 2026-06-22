@@ -3,11 +3,11 @@ class TiffanyLoop < Formula
   homepage "https://github.com/macguffinQ/Tiffany"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.19/tiffany-loop-v0.1.19-aarch64-apple-darwin.tar.gz"
-    sha256 "224d06dadfd30ae78959c2ea9f2e1fc6f0061d9117cc5ed4d9b0b42495d0a3c4"
+    url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.20/tiffany-loop-v0.1.20-aarch64-apple-darwin.tar.gz"
+    sha256 "2514a1642ceec3a2efa091a57017800afed730b6eb86a64743af5974631c76a1"
   else
-    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.19.tar.gz"
-    sha256 "c02fbe468a0bf49aa1f6ed428431b6d092f2ccec3d8e78388d28ee58d4fe8737"
+    url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.20.tar.gz"
+    sha256 "8bfbe9ddb3329816ec0befce4d3804ea0721ad0834e8f49c1583f98a3dba4ae1"
     depends_on "rust" => :build
   end
 
