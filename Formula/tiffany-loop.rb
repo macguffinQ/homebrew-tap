@@ -1,6 +1,7 @@
 class TiffanyLoop < Formula
   desc "Lightweight multi-agent orchestration shell for LLM CLIs"
   homepage "https://github.com/macguffinQ/Tiffany"
+  version "0.1.25"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/macguffinQ/Tiffany/releases/download/v0.1.25/tiffany-loop-v0.1.25-aarch64-apple-darwin.tar.gz"
@@ -29,6 +30,7 @@ class TiffanyLoop < Formula
 
       If Homebrew still reports an old tiffany-loop version after a release:
         brew update
+        brew upgrade macguffinQ/tap/tiffany-loop
         brew untap macguffinQ/tap
         brew tap macguffinQ/tap
         brew reinstall macguffinQ/tap/tiffany-loop
