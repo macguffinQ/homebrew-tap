@@ -7,7 +7,7 @@ class TiffanyLoop < Formula
     sha256 "b699a61ffa1b7d311ee7cf49ae12111834e3f9999d10f5f4eb28bd49886f640d"
   else
     url "https://github.com/macguffinQ/Tiffany/archive/refs/tags/v0.1.21.tar.gz"
-    sha256 "7906b67f7c59b20f82924e01c55d2272cc05b042ebae21b574535bbc0671eb50"
+    sha256 "753bff3943de35961bc1f66170f437735d54727f3e8cc5c27254cdc8cb4bd702"
     depends_on "rust" => :build
   end
 
